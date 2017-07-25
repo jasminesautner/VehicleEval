@@ -1,0 +1,6 @@
+framework module Pods_vehicleEval {
+  umbrella header "Pods-vehicleEval-umbrella.h"
+
+  export *
+  module * { export * }
+}

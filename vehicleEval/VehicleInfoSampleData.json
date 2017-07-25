@@ -1,0 +1,60 @@
+{
+    "results": [
+        {
+            "feScore": -1,
+            "make": "Alfa Romeo",
+            "model": "Spider Veloce 2000",
+            "year": 1985,
+            "fuelCost08": 1650
+        },
+        {
+            "feScore": -1,
+            "make": "Ferrari",
+            "model": "Testarossa",
+            "year": 1985,
+            "fuelCost08": 3150
+        },
+        {
+            "feScore": -1,
+            "make": "Dodge",
+            "model": "Charger",
+            "year": 1985,
+            "fuelCost08": 1300
+        },
+        {
+            "feScore": -1,
+            "make": "Dodge",
+            "model": "B150/B250 Wagon 2WD",
+            "year": 1985,
+            "fuelCost08": 3150
+        },
+        {
+            "feScore": -1,
+            "make": "Subaru",
+            "model": "Legacy AWD Turbo",
+            "year": 1993,
+            "fuelCost08": 2200
+        },
+        {
+            "feScore": -1,
+            "make": "Subaru",
+            "model": "Loyale",
+            "year": 1993,
+            "fuelCost08": 1550
+        },
+        {
+            "feScore": -1,
+            "make": "Subaru",
+            "model": "Loyale",
+            "year": 1993,
+            "fuelCost08": 1400
+        },
+        {
+            "feScore": -1,
+            "make": "Toyota",
+            "model": "Corolla",
+            "year": 1993,
+            "fuelCost08": 1450
+        }
+    ]
+}

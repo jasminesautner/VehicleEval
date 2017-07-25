@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.0)
+  - SwiftyJSON (3.1.4)
+  - WCLShineButton (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - SwiftyJSON
+  - WCLShineButton
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  WCLShineButton: 44371dea1bd1bb5b81cec5958d6280170c178059
+
+PODFILE CHECKSUM: 4ee912f477ed3f75ed7cb39811319d466977a001
+
+COCOAPODS: 1.2.1
