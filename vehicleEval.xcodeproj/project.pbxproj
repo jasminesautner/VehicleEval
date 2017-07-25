@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0A409D1F2801D400C238CE /* CustomModelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A409C1F2801D400C238CE /* CustomModelsTableViewCell.swift */; };
 		3A365AC91F201BE60097F67F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A365AC81F201BE60097F67F /* Vehicle.swift */; };
 		3A3AA9431F21545700F53AC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AA9421F21545700F53AC2 /* HomeViewController.swift */; };
 		3A3D2F371F229EC5006CCA67 /* ManufacturersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D2F361F229EC5006CCA67 /* ManufacturersViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0135B3242BA76D44D25BADC0 /* Pods_vehicleEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vehicleEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0A409C1F2801D400C238CE /* CustomModelsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModelsTableViewCell.swift; sourceTree = "<group>"; };
 		3A365AC81F201BE60097F67F /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		3A3AA9421F21545700F53AC2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3A3D2F361F229EC5006CCA67 /* ManufacturersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturersViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				3AC9C9F01F265D2A00AD0441 /* ModelsViewController.swift */,
 				3AC0ED661F269409009B093D /* Models.swift */,
 				3A5D0CB11F2697CF0042F306 /* VehicleDescription.swift */,
+				3A0A409C1F2801D400C238CE /* CustomModelsTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				3A3D2F371F229EC5006CCA67 /* ManufacturersViewController.swift in Sources */,
 				3AC9C9F11F265D2A00AD0441 /* ModelsViewController.swift in Sources */,
 				3A522D021F200087001DFEE4 /* VehiclesViewController.swift in Sources */,
+				3A0A409D1F2801D400C238CE /* CustomModelsTableViewCell.swift in Sources */,
 				3A522D001F200087001DFEE4 /* AppDelegate.swift in Sources */,
 				3AD2CA4F1F21471900840DF6 /* UIColor+extension.swift in Sources */,
 				3A365AC91F201BE60097F67F /* Vehicle.swift in Sources */,

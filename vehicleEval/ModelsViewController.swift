@@ -18,6 +18,7 @@ class ModelsViewController: UIViewController {
     
     
     @IBOutlet weak var modelsTableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,13 +81,13 @@ extension ModelsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "modelsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "modelsCell", for: indexPath) as! CustomModelTableViewCell
         
-        let vehicle = vehicleModels[indexPath.row] as Vehicle
-        print(vehicle.make)
+        let vehicle = vehicleModels[indexPath.row]
         
-        cell.textLabel?.text = "\(vehicle.make), \(vehicle.model) "
-        cell.detailTextLabel?.text = "\(vehicle.year)"
+        cell.vehicleModelMake?.text = "\(String(describing: vehicle.make)), \(String(describing: vehicle.model)) "
+        cell.vehicleYear?.text = "\(String(describing: vehicle.year))"
+        cell.vehicleFeScore?.text = "\(vehicle.feScore)"
         
         return cell
     }
