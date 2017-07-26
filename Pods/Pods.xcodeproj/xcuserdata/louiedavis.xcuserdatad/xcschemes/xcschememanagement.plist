@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICircularProgressRing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>WCLShineButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>095D533F99FD34BF18DB1D3386C1E1B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>273435669EF8480DFC73B68045B5B458</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A24CC85009DD93672CC82B06C721543</key>
+		<key>BC7D793377109AF24E4E836079A16125</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CC3142C7EA804420BCE2ADAE8B8276B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F4DEE82FBD31CB72C33E9B6631629E84</key>
+		<key>EAB4D15A95CA425A60E0A43E98503DE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

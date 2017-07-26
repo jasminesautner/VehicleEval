@@ -19,7 +19,6 @@ class VehiclesViewController: UIViewController {
     var filteredVehicleMakes = [String]()
     
     //var vehicleModelsArray = [VehicleModels]()
-
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -41,8 +40,7 @@ class VehiclesViewController: UIViewController {
             
             //self?.allVehicles = allVehiclesData.map { Vehicle(json: $0) }
             let vehicles = allVehiclesData.map { Vehicle(json: $0) }
-            let setOfVehicleMakes = Set(vehicles.map { $0.make })
-            self?.orderedVehicleMakes = setOfVehicleMakes.sorted()
+            self?.orderedVehicleMakes = Set(vehicles.map { $0.make }).sorted()
             
             DispatchQueue.main.async {
                 self?.vehicleTableView.reloadData()
@@ -82,16 +80,18 @@ class VehiclesViewController: UIViewController {
         
         //var indexPath: IndexPath = self.tableView.indexPathForSelectedRow()!
         
+        
         if segue.identifier == "segueToModels" {
             if let indexPath = vehicleTableView.indexPathForSelectedRow {
                 let destViewController = segue.destination as! ModelsViewController
-                let make = orderedVehicleMakes[indexPath.row]
+                //let make = filteredVehicleMakes[indexPath.row]
+                let make = searchController.isActive ? filteredVehicleMakes[indexPath.row] : orderedVehicleMakes[indexPath.row]
                 destViewController.make = make
+                
             } else {
                 print("No indexpath returned")
             }
         }
-        
         
     }
     
@@ -127,8 +127,8 @@ extension VehiclesViewController: UITableViewDataSource {
         cell.textLabel?.text = "\(vehicle.make)"
         */
         
-        var vehicleMake: String
-        vehicleMake = searchController.isActive ? filteredVehicleMakes[indexPath.row] : orderedVehicleMakes[indexPath.row]
+        // If search controller is active, set vehicle make to the filtered vehicle; else, set vehicle make to the ordered vehicle.
+        let vehicleMake = searchController.isActive ? filteredVehicleMakes[indexPath.row] : orderedVehicleMakes[indexPath.row]
         cell.textLabel?.text = vehicleMake
         
         //let vehicle = orderedVehicles[indexPath.row]   //[indexPath.row]

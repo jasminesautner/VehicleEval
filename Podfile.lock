@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.5.0)
   - SwiftyJSON (3.1.4)
+  - UICircularProgressRing (1.6.2)
   - WCLShineButton (1.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - SwiftyJSON
+  - UICircularProgressRing
   - WCLShineButton
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UICircularProgressRing: f25e366e0624d87973192b67e572c0712acbae85
   WCLShineButton: 44371dea1bd1bb5b81cec5958d6280170c178059
 
-PODFILE CHECKSUM: 4ee912f477ed3f75ed7cb39811319d466977a001
+PODFILE CHECKSUM: ee20e434f9f1ec7b925a848d15ca86450eae510a
 
 COCOAPODS: 1.2.1

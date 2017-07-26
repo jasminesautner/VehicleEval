@@ -6,9 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -92,52 +89,37 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fY8-im-faz" id="WIg-5v-Do5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-95-5el" userLabel="Make, Model">
-                                                    <rect key="frame" x="19" y="5" width="222" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcD-95-5el" userLabel="Make, Model">
+                                                    <rect key="frame" x="19" y="8" width="212" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="vehicleMakeModel"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                                     <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-0p-6ag" userLabel="Year">
-                                                    <rect key="frame" x="19" y="41" width="222" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oj-0p-6ag" userLabel="Year">
+                                                    <rect key="frame" x="19" y="41" width="212" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="vehicleYear"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="28" id="Pup-L8-8Ck"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-Vo-qoY" userLabel="feScore">
-                                                    <rect key="frame" x="301" y="12" width="66" height="51"/>
-                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.4471050941780822" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-Vo-qoY" userLabel="feScore">
+                                                    <rect key="frame" x="277" y="8" width="90" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="feScore"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="66" id="amx-Hu-WTG"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="7"/>
                                                     <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2oj-0p-6ag" firstAttribute="firstBaseline" secondItem="IYc-Vo-qoY" secondAttribute="baseline" id="0OM-Rs-QTi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2oj-0p-6ag" secondAttribute="bottom" constant="-3.5" id="2rp-Tk-AY8"/>
-                                                <constraint firstItem="IYc-Vo-qoY" firstAttribute="leading" secondItem="WcD-95-5el" secondAttribute="trailing" constant="60" id="3e0-14-fbe"/>
-                                                <constraint firstItem="WcD-95-5el" firstAttribute="leading" secondItem="2oj-0p-6ag" secondAttribute="leading" id="9Yr-BE-eru"/>
-                                                <constraint firstItem="WcD-95-5el" firstAttribute="trailing" secondItem="2oj-0p-6ag" secondAttribute="trailing" id="FGy-6v-fKA"/>
-                                                <constraint firstItem="WcD-95-5el" firstAttribute="baseline" secondItem="IYc-Vo-qoY" secondAttribute="firstBaseline" id="OKv-Mc-Qs7"/>
-                                                <constraint firstItem="WcD-95-5el" firstAttribute="top" secondItem="WIg-5v-Do5" secondAttribute="topMargin" constant="-3" id="Oqh-0d-IMN"/>
-                                                <constraint firstItem="IYc-Vo-qoY" firstAttribute="trailing" secondItem="WIg-5v-Do5" secondAttribute="trailingMargin" id="VDl-Bp-MRm"/>
-                                                <constraint firstItem="2oj-0p-6ag" firstAttribute="leading" secondItem="WIg-5v-Do5" secondAttribute="leadingMargin" constant="11" id="eNn-GE-AuQ"/>
-                                                <constraint firstItem="IYc-Vo-qoY" firstAttribute="centerY" secondItem="WIg-5v-Do5" secondAttribute="centerY" id="wQC-xY-ON6"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>

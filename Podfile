@@ -9,5 +9,6 @@ target 'vehicleEval' do
 pod 'Alamofire', '~> 4.4'
 pod 'SwiftyJSON'
 pod 'WCLShineButton'
+pod 'UICircularProgressRing'
 
 end
