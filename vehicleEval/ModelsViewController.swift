@@ -37,15 +37,9 @@ class ModelsViewController: UIViewController {
                 let allVehiclesData = vehicleData["results"].arrayValue
                 
                  let vehicles = allVehiclesData.map { Vehicle(json: $0) }
-
-                for vehicle in vehicles {
-                    if vehicle.make == make {
-                        
-                    self?.vehicleModels.append(vehicle)
-                        
-                        print("\(vehicle.make), \(vehicle.model)")
-                    }
-                }
+                
+                self?.vehicleModels = vehicles.filter { $0.make == make }.sorted { $0.year > $1.year}
+            
                 DispatchQueue.main.async {
                     self?.modelsTableView.reloadData()
                 }
