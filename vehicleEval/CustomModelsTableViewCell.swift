@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import UICircularProgressRing
 
 class CustomModelTableViewCell: UITableViewCell {
     
@@ -22,5 +23,5 @@ class CustomModelTableViewCell: UITableViewCell {
     
     @IBOutlet weak var vehicleFeScore: UILabel!
     
-    
+    @IBOutlet weak var progressRing: UICircularProgressRingView!
 }

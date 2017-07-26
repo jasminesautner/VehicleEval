@@ -8,17 +8,25 @@
 
 import UIKit
 import SwiftyJSON
+import UICircularProgressRing
 
 class ModelsViewController: UIViewController {
+    /**
+     Delegate call back, called when progress ring is done animating for current value
+     
+     - Parameter ring: The ring which finished animating
+     
+     */
+    
+
     
     //var vehicleModelsArray = [String]()
     var vehicleModels = [Vehicle]()
     var make: String?
-
-    
     
     @IBOutlet weak var modelsTableView: UITableView!
 
+    var cell: CustomModelTableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,14 +52,16 @@ class ModelsViewController: UIViewController {
                     self?.modelsTableView.reloadData()
                 }
             }
+            
         }
+    
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation
@@ -75,13 +85,15 @@ extension ModelsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "modelsCell", for: indexPath) as! CustomModelTableViewCell
+        cell = tableView.dequeueReusableCell(withIdentifier: "modelsCell", for: indexPath) as! CustomModelTableViewCell
         
         let vehicle = vehicleModels[indexPath.row]
         
         cell.vehicleModelMake?.text = "\(String(describing: vehicle.make)), \(String(describing: vehicle.model)) "
         cell.vehicleYear?.text = "\(String(describing: vehicle.year))"
         cell.vehicleFeScore?.text = "\(vehicle.feScore)"
+        
+        cell.progressRing.setProgress(value: CGFloat(vehicle.feScore), animationDuration: 0)
         
         return cell
     }
